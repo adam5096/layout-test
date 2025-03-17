@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Pinfang-regular"; /* 您可以自訂這個名稱，之後會用來引用字體 */
-  src: url("../../assets/fonts/PingFang/PingFang Regular.ttf") format("truetype"); /* 路徑根據您的檔案位置調整 */
+  font-family: "NotoSansTC-Regular"; /* 您可以自訂這個名稱，之後會用來引用字體 */
+  src: url("../../font/NotoSansTC-Regular.ttf") format("truetype"); /* 路徑根據您的檔案位置調整 */
   font-weight: normal; /* 根據字體的粗細調整，例如 400 */
   font-style: normal; /* 根據字體的樣式調整，例如 normal 或 italic */
 }
@@ -14,15 +14,25 @@
   * {
     @apply p-0 m-0 box-border;
   }
-  .display-initial {
-    display: initial;
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
   }
 }
 
 @layer components {
-  /* 版心 */
-  .dessert-container {
-    @apply max-w-[1200px] mx-auto px-10;
+  /* 版心 1 */
+  .headphone-container {
+    @apply w-full max-w-[1760px] mx-auto;
+  }
+
+  /* 版心 2 */
+  .headphone-container-2 {
+    @apply w-full max-w-[1296px] mx-auto;
   }
 }
 
@@ -93,7 +103,6 @@
   .imageTrimmingSquare {
     /* 正方形 */
     padding-top: 100%;
-
   }
 
   /* 文字尺寸隨螢幕縮放而縮放 12-20 */
@@ -179,15 +188,40 @@
   }
 
   /* 導航區 li 文字家族與顏色 */
-  .topNavLinksStyle {
-    @apply text-home-primary-color font-pinfangSemiBold ;
-  }
+  /* .topNavLinksStyle {
+    @apply text-home-primary-color font-pinfangSemiBold;
+  } */
+
   /* 導航區 a 文字定位相關樣式 */
-  .topNavLinksInnerStyle {
-    @apply break-keep w-auto font-bold text-base text-home-primary-color ;
+  .topNavLinksTextStyle {
+    @apply p-[8px] break-keep font-NotoSansTCRegular;
   }
 
+  .headphone {
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/img/headphone-full-large.png");
+  }
 
+  .gridArea {
+    display: grid;
+    grid-template-areas:
+      "a a b b"
+      "a a c c"
+      "d d d d"
+      "d d d d";
+  }
 
-  
+  .gridItemA {
+    grid-area: a;
+  }
+  .gridItemB {
+    grid-area: b;
+  }
+  .gridItemC {
+    grid-area: c;
+  }
+  .gridItemD {
+    grid-area: d;
+  }
 }

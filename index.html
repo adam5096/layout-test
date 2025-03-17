@@ -1,11 +1,224 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/styles/all-output/index-output.css">
+
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <!-- 頂端導航 -->
+        <header class="outline">
+            <div class=" max-md:px-[12px]  headphone-container px-[80px] py-[16px] flex justify-between items-start">
+                <h1 class="my-auto">
+                    <img src="./assets/img/Logo-black.png" alt="logo" class="l object-cover object-center">
+                </h1>
+                <nav class=" max-lg:hidden my-auto flex justify-between items-center">
+                    <ul class=" flex gap-x-[48px] items-center">
+                        <li class="p-[8px] flex items-center"><a href="#" class=" topNavLinksTextStyle">首頁</a>
+                        </li>
+                        <li class="p-[8px] flex items-center"><a href="#" class=" topNavLinksTextStyle">最新消息</a>
+                        </li>
+                        <li class="p-[8px] flex items-center"><a href="#" class=" topNavLinksTextStyle">商品列表</a>
+                        </li>
+                        <li class="p-[8px] flex items-center"><a href="#" class=" topNavLinksTextStyle">關於我們</a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+                <div class="flex gap-x-[10px] items-center">
+                    <!-- 放大鏡 -->
+                    <div class="flex items-center">
+                        <img src="./assets/img/Search.png" alt="search-icon">
+                    </div>
+                    <!-- 放大鏡 END -->
+
+                    <!-- 漢堡 -->
+                    <ul class="max-md:flex max-md:items-center hidden ">
+                        <li><a href="#"><img src="./assets/img/hamburger.png" alt="menu"></a></li>
+                    </ul>
+                    <!-- 漢堡 END -->
+                </div>
+            </div>
+
+
+        </header>
+        <!-- 頂端導航 END -->
+
+        <main>
+            <!-- hero -->
+            <section class="bg-black">
+                <div class="max-lg:px-[12px]  headphone-container-2 py-[60px]">
+                    <img src="./assets/img/headphone-full-large.png" alt="headphone-full">
+                    <div class="flex flex-col gap-y-[16px]">
+                        <h1 class="text-white font-[500] text-[40px]/[48px]">INEAR PRO MAX</h1>
+                        <div>
+                            <p class="text-white text-[16px]/[24px]">9/16 - 10/30 官網搶先販售</p>
+                            <p class="text-white text-[16px]/[24px]">
+                                新色上市，搭載最新降噪技術，提供給您最高音質享受，採用適應性演算法，快速處理音效，讓您享受更高傳真的效果。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- brand new -->
+            <section class="bg-[#2B2B2B]">
+                <div class="max-lg:px-[12px]  headphone-container-2 py-[60px]">
+                    <div class=" space-y-[48px]">
+                        <h2 class="text-center text-white text-[500] text-[32px]/[48px] break-keep">最新商品</h2>
+                        <ul class="max-xl:flex-col max-xl:items-center flex gap-x-[24px]">
+                            <li class="space-y-[24px]">
+                                <a href="#"><img src="./assets/img/INEAR-PRO-II.png" alt="INEAR PRO II"></a>
+                                <p class="p-[8px] text-white text-[16px]/[24px]">INEAR PRO II</p>
+                            </li>
+                            <li class="space-y-[24px]">
+                                <a href="#"><img src="./assets/img/INEAR-PRO-MAX.png" alt="INEAR PRO MAX"></a>
+                                <p class="p-[8px] text-white text-[16px]/[24px]">INEAR PRO II</p>
+                            </li>
+                            <li class="space-y-[24px]">
+                                <a href="#"><img src="./assets/img/INEAR-PRO-I.png" alt="INEAR PRO I"></a>
+                                <p class="p-[8px] text-white text-[16px]/[24px]">INEAR PRO II</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- products -->
+            <section class="bg-black">
+                <div class="max-lg:px-[12px]  headphone-container-2 py-[60px]">
+                    <div class="text-center space-y-[8px]">
+                        <h1 class="text-white text-[32px]/[38px]">多色選擇，專屬你的與眾不同</h1>
+                        <p class="text-white text-[16px]/[24px]">我的風格我主張，獨創品牌限定色，除了耀眼更要獨一無二</p>
+                    </div>
+                    <div class="max-lg:space-y-[24px] space-y-[600px] grid-cols-4 grid-row-5">
+                        <ul class="w-full max-lg:grid-cols-1 max-lg:gap-y-[24px]">
+                            <li><img src="./assets/img/pd-1.png" alt="pd-1"
+                                    class="outline w-1/2 h-auto  col-start-1 col-end-3 row-start-1 row-end-3">
+                            </li>
+                            <li><img src="./assets/img/pd-2.png" alt="pd-2"
+                                    class="outline w-1/4 h-auto  col-start-3 col-end-5 row-start-1 row-end-2">
+                            </li>
+                            <li><img src="./assets/img/pd-3.png" alt="pd-3"
+                                    class="outline w-1/4 h-auto  col-start-3 col-end-5 row-start-2 row-end-3">
+                            </li>
+                            <li><img src="./assets/img/pd-4.png" alt="pd-4"
+                                    class="outline w-1/4 h-auto  col-start-1 col-end-6 row-start-3 row-end-6">
+                            </li>
+                            <!-- <li><img src="./assets/img/pd-1.png" alt="pd-1" class="outline   gridItemA">
+                            </li>
+                            <li><img src="./assets/img/pd-2.png" alt="pd-2" class="outline    gridItemB">
+                            </li>
+                            <li><img src="./assets/img/pd-3.png" alt="pd-3" class="outline    gridItemC">
+                            </li>
+                            <li><img src="./assets/img/pd-4.png" alt="pd-4" class="outline    gridItemD">
+                            </li> -->
+                        </ul>
+
+                        <ul class="max-lg:grid max-lg:grid-cols-1 max-lg:gap-y-[24px]">
+                            <li><img src="./assets/img/pd-5.png" alt="pd-5"></li>
+                            <li><img src="./assets/img/pd-6.png" alt="pd-6"></li>
+                            <li><img src="./assets/img/pd-7.png" alt="pd-7"></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- contact -->
+            <section class="bg-[#404040]">
+                <div class="px-[12px] headphone-container-2 py-[64px]">
+                    <div class="max-lg:flex-col flex gap-x-[24px]  items-center">
+                        <ul class="max-lg:mt-[24px] max-lg:justify-center max-lg:order-2 order-1 w-full flex justify-end gap-[24px]">
+                            <div class="pt-[48px] space-y-[24px]">
+                                <li><img src="./assets/img/contact-1.png" alt="contact-1"></li>
+                                <li><img src="./assets/img/contact-2.png" alt="contact-2"></li>
+                            </div>
+                            <div class="pb-[48px] space-y-[24px]">
+                                <li><img src="./assets/img/contact-3.png" alt="contact-3"></li>
+                                <li><img src="./assets/img/contact-4.png" alt="contact-4"></li>
+                            </div>
+                        </ul>
+
+                        <div class="max-lg:order-1 order-2 space-y-[48px]">
+                            <div class="space-y-[24px]">
+                                <h2 class="text-white text-[32px]/[38px]">訂製專屬於您的完美耳機</h2>
+                                <p class="text-white text-[16px]/[24px]">請於下方留下您的詳細資料與訂製需求，將有專人於 3
+                                    日內聯繫，此表單僅做為客服調查，不等同於完成訂製商品。</p>
+                            </div>
+
+                            <form class="w-full">
+                                <div class="space-y-[24px] text-white">
+                                    <div class=" flex flex-col">
+                                        <label for="last-name">姓氏</label>
+                                        <input type="text" name="last-name" id="last-name" placeholder="請輸入姓氏">
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <label for="first-name">名字</label>
+                                        <input type="text" name="first-name" id="first-name" placeholder="請輸入名字">
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label for="email">信箱</label>
+                                        <input type="email" name="email" id="email" placeholder="請輸入信箱">
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <label for="tel">聯絡電話</label>
+                                        <input type="tel" name="tel" id="tel" placeholder="請輸入聯絡電話">
+                                    </div>
+
+                                    <div class="flex justify-end">
+                                        <button type="submit"
+                                            class="max-lg:w-full px-[12px] py-[6px] rounded-[8px] bg-[#FFFFFF] text-black text-[16px]/[24px]">送出表單</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-black  h-[50vh]">
+            <!-- max-w-[1296px] -->
+            <div class="max-lg:px-[12px] headphone-container-2 py-[60px] space-y-[24px]">
+                <!-- logo -->
+                <div class="w-auto h-auto max-lg:justify-start flex justify-center items-center">
+                    <img src="./assets/img/Logo.png" alt="logo" class="object-cover object-center">
+                </div>
+
+                <div class="outline max-lg:space-y-[24px]">
+                    <!-- social icon -->
+                    <ul class="max-lg:justify-start flex justify-center items-center gap-x-[24px] ">
+                        <li><a href="#"><img src="./assets/img/Twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="./assets/img/instagram.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="./assets/img/Facebook.png" alt="facebook"></a></li>
+                    </ul>
+                    <!-- divide -->
+                    <div class="max-lg:hidden block mx-auto my-[48px] w-[100px] h-[1px] bg-white"></div>
+                    <!-- bottom -->
+                    <div
+                        class="outline max-lg:items-start max-xl:gap-y-[40px] max-xl:flex-col max-xl:items-center flex justify-between">
+                        <ul class="flex gap-x-[24px] items-center">
+                            <li><a href="#" class="text-[16px]/[24px] text-white break-keep">最新商品</a></li>
+                            <li><a href="#" class="text-[16px]/[24px] text-white break-keep">多色選擇</a></li>
+                            <li><a href="#" class="text-[16px]/[24px] text-white break-keep">定製耳機</a></li>
+                        </ul>
+                        <p class="text-[16px]/[24px] text-white break-keep">© WEBNAME 2024 All right Reserved</p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </body>
+
 </html>
