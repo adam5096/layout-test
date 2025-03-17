@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Pinfang-regular"; /* 您可以自訂這個名稱，之後會用來引用字體 */
+  src: url("../../assets/fonts/PingFang/PingFang Regular.ttf") format("truetype"); /* 路徑根據您的檔案位置調整 */
+  font-weight: normal; /* 根據字體的粗細調整，例如 400 */
+  font-style: normal; /* 根據字體的樣式調整，例如 normal 或 italic */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自訂全域基礎樣式 */
+@layer base {
+  * {
+    @apply p-0 m-0 box-border;
+  }
+  .display-initial {
+    display: initial;
+  }
+}
+
+@layer components {
+  /* 版心 */
+  .dessert-container {
+    @apply max-w-[1200px] mx-auto px-10;
+  }
+}
+
+@layer utilities {
+  /* home hero 圖片濾鏡效果 */
+  .hero-blur-effect {
+    position: relative;
+  }
+
+  .hero-blur-effect::before {
+    @apply absolute inset-0 bg-cover bg-center;
+    content: "";
+  }
+
+  .hero-blur-effect::after {
+    @apply absolute inset-0 bg-opacity-10 backdrop-blur-sm;
+    content: "";
+  }
+
+  .hero-blur-effect:nth-child(1)::after {
+    @apply bg-home-third-color bg-opacity-80 backdrop-blur-sm;
+  }
+  .hero-blur-effect:nth-child(2)::after,
+  .hero-blur-effect:nth-child(3)::after {
+    @apply bg-home-primary-color bg-opacity-80 backdrop-blur-sm;
+  }
+  /* home hero 圖片濾鏡效果 END */
+
+  /* her0: 為三張圖片設定各自的背景 */
+  .hero-blur-effect:nth-child(1)::before {
+    background-image: url("https://bit.ly/2R5tqwD");
+  }
+  .hero-blur-effect:nth-child(2)::before {
+    background-image: url("https://bit.ly/2Dwoxd7");
+  }
+  .hero-blur-effect:nth-child(3)::before {
+    background-image: url("https://bit.ly/2OUteif");
+  }
+
+  /* 直向文字樣式 */
+  .writing-mode-vertical {
+    writing-mode: vertical-rl; /* 由上而下，從右到左 */
+    text-orientation: mixed; /* 確保文字方向自然 */
+  }
+  /* 橫向文字樣式 */
+  .writing-mode-reset {
+    writing-mode: initial; /* 由上而下，從左到右 */
+    text-orientation: initial; /* 確保文字方向自然 */
+  }
+
+  /* 又霖的神奇魔法 */
+  /* 矩形圖片框修剪 */
+  .imagetrimmimg {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      object-fit: cover;
+      -o-object-fit: cover;
+    }
+  }
+  /* 神奇魔法 */
+  /* 正方形圖片框修剪 */
+  .imageTrimmingSquare {
+    /* 正方形 */
+    padding-top: 100%;
+
+  }
+
+  /* 文字尺寸隨螢幕縮放而縮放 12-20 */
+  .fontSizeMin12Max20 {
+    --min-size: 12;
+    --max-size: 20;
+    --font-size: calc(
+      (var(--min-size) * 1px) + (var(--max-size) - var(--min-size)) *
+        ((100cqw - 320px) / (1920 - 320))
+    );
+    font-size: clamp(
+      var(--min-size) * 1px,
+      var(--font-size),
+      var(--max-size) * 1px
+    );
+  }
+  /* 文字尺寸隨螢幕縮放而縮放 12-24 */
+  .fontSizeMin12Max24 {
+    --min-size: 12;
+    --max-size: 24;
+    --font-size: calc(
+      (var(--min-size) * 1px) + (var(--max-size) - var(--min-size)) *
+        ((100cqw - 320px) / (1920 - 320))
+    );
+    font-size: clamp(
+      var(--min-size) * 1px,
+      var(--font-size),
+      var(--max-size) * 1px
+    );
+  }
+
+  /* 文字動態內距 1 */
+  .dynamic-padding-x-33-y14 {
+    padding-top: clamp(0px, 1vw, 14px); /* 最小 0px，理想值 2vw，最大 14px */
+    padding-bottom: clamp(0px, 1vw, 14px);
+    padding-left: clamp(0px, 3vw, 33px); /* 最小 0px，理想值 5vw，最大 33px */
+    padding-right: clamp(0px, 3vw, 33px);
+  }
+  /* 文字動態內距 2 */
+  .dynamic-padding-x-90-y16 {
+    padding-top: clamp(0px, 1vw, 16px); /* 最小 0px，理想值 2vw，最大 14px */
+    padding-bottom: clamp(0px, 1vw, 16px);
+    padding-left: clamp(0px, 3vw, 90px); /* 最小 0px，理想值 5vw，最大 33px */
+    padding-right: clamp(0px, 3vw, 90px);
+  }
+
+  .heroBg {
+    position: absolute;
+    left: 0;
+    bottom: calc(50% - 210px);
+    height: 420px;
+    z-index: -1;
+  }
+
+  /* hero 大圖上下端白色封條 */
+  .topBg {
+    z-index: 0;
+    & ::after,
+    & ::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 2rem;
+      background-color: #fff;
+      left: 0;
+      z-index: -1;
+    }
+
+    & ::before {
+      top: 0;
+      @media (max-width: 1280px) {
+        display: none;
+      }
+    }
+
+    & ::after {
+      bottom: 0;
+      @media (max-width: 1280px) {
+        display: none;
+      }
+    }
+  }
+
+  /* 導航區 li 文字家族與顏色 */
+  .topNavLinksStyle {
+    @apply text-home-primary-color font-pinfangSemiBold ;
+  }
+  /* 導航區 a 文字定位相關樣式 */
+  .topNavLinksInnerStyle {
+    @apply break-keep w-auto font-bold text-base text-home-primary-color ;
+  }
+
+
+
+  
+}
