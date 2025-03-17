@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "Pinfang-regular";
+  font-family: "NotoSansTC-Regular";
 
   /* 您可以自訂這個名稱，之後會用來引用字體 */
 
-  src: url("../../assets/fonts/PingFang/PingFang Regular.ttf") format("truetype");
+  src: url("../../font/NotoSansTC-Regular.ttf") format("truetype");
 
   /* 路徑根據您的檔案位置調整 */
 
@@ -685,7 +685,7 @@ li {
 
 /* 導航區 li 文字家族與顏色 */
 
-/* .topNavLinksLiStyle {
+/* .topNavLinksStyle {
     @apply text-home-primary-color font-pinfangSemiBold;
   } */
 
@@ -693,8 +693,10 @@ li {
 
 .topNavLinksTextStyle {
   word-break: keep-all;
-  font-family: Noto-Sans-TC-Regular, sans-serif;
-  font-size: 16px;
+  padding: 8px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
 }
 
 /* 自訂全域基礎樣式 */
