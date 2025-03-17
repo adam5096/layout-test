@@ -189,6 +189,7 @@
 
   /* 導航區 a 文字定位相關樣式 */
   .topNavLinksTextStyle {
-    @apply p-[8px] break-keep font-bold text-base;
+    @apply p-[8px] break-keep font-NotoSansTCRegular;
   }
+
 }

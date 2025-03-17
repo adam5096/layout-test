@@ -592,9 +592,28 @@ li {
   max-width: 1760px;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.my-\[48px\] {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -605,12 +624,48 @@ li {
   display: none;
 }
 
+.h-\[1px\] {
+  height: 1px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-\[1296px\] {
+  max-width: 1296px;
+}
+
 .items-start {
   align-items: flex-start;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -622,9 +677,38 @@ li {
        column-gap: 10px;
 }
 
+.gap-x-\[24px\] {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+
 .gap-x-\[48px\] {
   -moz-column-gap: 48px;
        column-gap: 48px;
+}
+
+.gap-y-\[24px\] {
+  row-gap: 24px;
+}
+
+.space-y-\[24px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(24px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(24px * var(--tw-space-y-reverse));
+}
+
+.break-keep {
+  word-break: keep-all;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -649,6 +733,40 @@ li {
 .py-\[16px\] {
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-\[48px\] {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.px-\[312px\] {
+  padding-left: 312px;
+  padding-right: 312px;
+}
+
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[16px\]\/\[24px\] {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .outline {
@@ -694,12 +812,61 @@ li {
 .topNavLinksTextStyle {
   word-break: keep-all;
   padding: 8px;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 700;
+  font-family: NotoSansTC-Regular, sans-serif;
 }
 
 /* 自訂全域基礎樣式 */
+
+@media not all and (min-width: 1280px) {
+  .max-xl\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-xl\:items-center {
+    align-items: center;
+  }
+
+  .max-xl\:justify-center {
+    justify-content: center;
+  }
+
+  .max-xl\:gap-y-\[40px\] {
+    row-gap: 40px;
+  }
+}
+
+@media not all and (min-width: 1024px) {
+  .max-lg\:hidden {
+    display: none;
+  }
+
+  .max-lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-lg\:items-start {
+    align-items: flex-start;
+  }
+
+  .max-lg\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .max-lg\:gap-y-\[40px\] {
+    row-gap: 40px;
+  }
+
+  .max-lg\:space-y-\[24px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(24px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(24px * var(--tw-space-y-reverse));
+  }
+
+  .max-lg\:px-\[12px\] {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
 
 @media not all and (min-width: 768px) {
   .max-md\:flex {
@@ -710,12 +877,40 @@ li {
     display: none;
   }
 
+  .max-md\:flex-col {
+    flex-direction: column;
+  }
+
   .max-md\:items-center {
     align-items: center;
+  }
+
+  .max-md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .max-md\:gap-y-\[40px\] {
+    row-gap: 40px;
+  }
+
+  .max-md\:gap-y-\[24px\] {
+    row-gap: 24px;
+  }
+
+  .max-md\:space-y-\[24px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(24px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(24px * var(--tw-space-y-reverse));
   }
 
   .max-md\:px-\[12px\] {
     padding-left: 12px;
     padding-right: 12px;
+  }
+}
+
+@media not all and (min-width: 640px) {
+  .max-sm\:justify-start {
+    justify-content: flex-start;
   }
 }

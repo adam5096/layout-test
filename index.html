@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/styles/all-output/index-output.css">
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/styles/all-output/index-output.css">
+
+        <style>
+            /* .head-phone-large {
+                display: block;
+                background-color: chocolate;
+                width: 100%;
+                height: auto;
+                background-image: url('./assets/img/headphone-full-large.png');
+                object-fit: cover;
+                object-position: center;
+            } */
+        </style>
+    </head>
+
     <body>
         <!-- 頂端導航 -->
-        <header>
-            <div class="outline max-md:px-[12px] headphone-container px-[80px] py-[16px] flex justify-between items-start">
+        <header class="outline">
+            <div class=" max-md:px-[12px]  headphone-container px-[80px] py-[16px] flex justify-between items-start">
                 <h1 class="my-auto">
-                    <img src="./assets/img/Logo-black.png" alt="logo" class="outlinel object-cover object-center">
+                    <img src="./assets/img/Logo-black.png" alt="logo" class="l object-cover object-center">
                 </h1>
-                <nav class="outline max-md:hidden my-auto flex justify-between items-center">
-                    <ul class="outline flex gap-x-[48px] items-center">
-                        <li class="p-[8px] flex items-center"><a href="#" class="outline topNavLinksTextStyle">首頁</a>
+                <nav class=" max-lg:hidden my-auto flex justify-between items-center">
+                    <ul class=" flex gap-x-[48px] items-center">
+                        <li class="p-[8px] flex items-center"><a href="#" class=" topNavLinksTextStyle">首頁</a>
                         </li>
-                        <li class="p-[8px] flex items-center"><a href="#" class="outline topNavLinksTextStyle">最新消息</a>
+                        <li class="p-[8px] flex items-center"><a href="#" class=" topNavLinksTextStyle">最新消息</a>
                         </li>
-                        <li class="p-[8px] flex items-center"><a href="#" class="outline topNavLinksTextStyle">商品列表</a>
+                        <li class="p-[8px] flex items-center"><a href="#" class=" topNavLinksTextStyle">商品列表</a>
                         </li>
-                        <li class="p-[8px] flex items-center"><a href="#" class="outline topNavLinksTextStyle">關於我們</a>
+                        <li class="p-[8px] flex items-center"><a href="#" class=" topNavLinksTextStyle">關於我們</a>
                         </li>
                     </ul>
-        
+
                 </nav>
-        
+
                 <div class="flex gap-x-[10px]  items-center">
                     <!-- 放大鏡 -->
                     <div class="flex items-center">
                         <img src="./assets/img/Search.png" alt="search-icon">
                     </div>
                     <!-- 放大鏡 END -->
-        
+
                     <!-- 漢堡 -->
                     <ul class="max-md:flex max-md:items-center hidden ">
                         <li><a href="#"><img src="./assets/img/hamburger.png" alt="menu"></a></li>
@@ -41,17 +55,49 @@
                     <!-- 漢堡 END -->
                 </div>
             </div>
-        
-        
+
+
         </header>
         <!-- 頂端導航 END -->
-        
+
         <main>
-            <section></section>
+            <section class="w-full h-auto outline">
+                <div >
+                    <img src="./assets/img/headphone-full-large.png" alt="headphone-full">
+                </div>
+            </section>
         </main>
-        
-        <footer>
-        
+
+        <footer class="bg-black  h-[50vh]">
+            <!-- max-w-[1296px] -->
+            <div class="max-lg:px-[12px] space-y-[24px] px-[312px] py-[60px] mx-auto">
+                <!-- logo -->
+                <div class="outline max-lg:justify-start flex justify-center items-center">
+                    <img src="./assets/img/Logo.png" alt="logo" class="object-cover object-center">
+                </div>
+
+                <div class="outline max-lg:space-y-[24px]">
+                    <!-- social icon -->
+                    <ul class="max-lg:justify-start flex justify-center items-center gap-x-[24px] ">
+                        <li><a href="#"><img src="./assets/img/Twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="./assets/img/instagram.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="./assets/img/Facebook.png" alt="facebook"></a></li>
+                    </ul>
+                    <!-- divide -->
+                    <div class="max-lg:hidden block mx-auto my-[48px] w-[100px] h-[1px] bg-white"></div>
+                    <!-- bottom -->
+                    <div class="outline max-lg:items-start max-xl:gap-y-[40px] max-xl:flex-col max-xl:items-center flex justify-between">
+                        <ul class="flex gap-x-[24px] items-center">
+                            <li><a href="#" class="text-[16px]/[24px] text-white break-keep">最新商品</a></li>
+                            <li><a href="#" class="text-[16px]/[24px] text-white break-keep">多色選擇</a></li>
+                            <li><a href="#" class="text-[16px]/[24px] text-white break-keep">定製耳機</a></li>
+                        </ul>
+                        <p class="text-[16px]/[24px] text-white break-keep">© WEBNAME 2024 All right Reserved</p>
+                    </div>
+                </div>
+
+            </div>
         </footer>
     </body>
+
 </html>
