@@ -8,15 +8,6 @@
         <link rel="stylesheet" href="assets/styles/all-output/index-output.css">
 
         <style>
-            /* .head-phone-large {
-                display: block;
-                background-color: chocolate;
-                width: 100%;
-                height: auto;
-                background-image: url('./assets/img/headphone-full-large.png');
-                object-fit: cover;
-                object-position: center;
-            } */
         </style>
     </head>
 
@@ -61,16 +52,47 @@
         <!-- 頂端導航 END -->
 
         <main>
-            <section class="w-full h-auto outline">
-                <div >
+            <section class="bg-black">
+                <div class="max-lg:px-[12px]  headphone-container-2 py-[60px]">
                     <img src="./assets/img/headphone-full-large.png" alt="headphone-full">
+                    <div class="flex flex-col gap-y-[16px]">
+                        <h1 class="text-white font-[500] text-[40px]/[48px]">INEAR PRO MAX</h1>
+                        <div>
+                            <p class="text-white text-[16px]/[24px]">9/16 - 10/30 官網搶先販售</p>
+                            <p class="text-white text-[16px]/[24px]">
+                                新色上市，搭載最新降噪技術，提供給您最高音質享受，採用適應性演算法，快速處理音效，讓您享受更高傳真的效果。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-[#2B2B2B]">
+                <div class="max-lg:px-[12px]  headphone-container-2 py-[60px]">
+                    <div class=" space-y-[48px]">
+                        <h2 class="text-center text-white text-[500] text-[32px]/[48px] break-keep">最新商品</h2>
+                        <ul class="max-xl:flex-col max-xl:items-center flex gap-x-[24px]">
+                            <li class="space-y-[24px]">
+                                <a href="#"><img src="./assets/img/INEAR-PRO-II.png" alt="INEAR PRO II"></a>
+                                <p class="p-[8px] text-white text-[16px]/[24px]">INEAR PRO II</p>
+                            </li>
+                            <li class="space-y-[24px]">
+                                <a href="#"><img src="./assets/img/INEAR-PRO-MAX.png" alt="INEAR PRO MAX"></a>
+                                <p class="p-[8px] text-white text-[16px]/[24px]">INEAR PRO II</p>
+                            </li>
+                            <li class="space-y-[24px]">
+                                <a href="#"><img src="./assets/img/INEAR-PRO-I.png" alt="INEAR PRO I"></a>
+                                <p class="p-[8px] text-white text-[16px]/[24px]">INEAR PRO II</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </section>
         </main>
 
         <footer class="bg-black  h-[50vh]">
             <!-- max-w-[1296px] -->
-            <div class="max-lg:px-[12px] space-y-[24px] px-[312px] py-[60px] mx-auto">
+            <div class="max-lg:px-[12px] headphone-container-2 py-[60px] space-y-[24px]">
                 <!-- logo -->
                 <div class="outline max-lg:justify-start flex justify-center items-center">
                     <img src="./assets/img/Logo.png" alt="logo" class="object-cover object-center">
@@ -86,7 +108,8 @@
                     <!-- divide -->
                     <div class="max-lg:hidden block mx-auto my-[48px] w-[100px] h-[1px] bg-white"></div>
                     <!-- bottom -->
-                    <div class="outline max-lg:items-start max-xl:gap-y-[40px] max-xl:flex-col max-xl:items-center flex justify-between">
+                    <div
+                        class="outline max-lg:items-start max-xl:gap-y-[40px] max-xl:flex-col max-xl:items-center flex justify-between">
                         <ul class="flex gap-x-[24px] items-center">
                             <li><a href="#" class="text-[16px]/[24px] text-white break-keep">最新商品</a></li>
                             <li><a href="#" class="text-[16px]/[24px] text-white break-keep">多色選擇</a></li>

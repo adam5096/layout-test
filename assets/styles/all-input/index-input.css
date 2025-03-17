@@ -25,9 +25,14 @@
 }
 
 @layer components {
-  /* 版心 */
+  /* 版心 1 */
   .headphone-container {
-    @apply max-w-[1760px] mx-auto;
+    @apply w-full max-w-[1760px] mx-auto;
+  }
+
+  /* 版心 2 */
+  .headphone-container-2 {
+    @apply w-full max-w-[1296px] mx-auto;
   }
 }
 
@@ -192,4 +197,9 @@
     @apply p-[8px] break-keep font-NotoSansTCRegular;
   }
 
+  .headphone {
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/img/headphone-full-large.png");
+  }
 }
