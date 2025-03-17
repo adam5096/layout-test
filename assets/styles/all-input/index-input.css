@@ -202,4 +202,26 @@
     height: 100%;
     background-image: url("./assets/img/headphone-full-large.png");
   }
+
+  .gridArea {
+    display: grid;
+    grid-template-areas:
+      "a a b b"
+      "a a c c"
+      "d d d d"
+      "d d d d";
+  }
+
+  .gridItemA {
+    grid-area: a;
+  }
+  .gridItemB {
+    grid-area: b;
+  }
+  .gridItemC {
+    grid-area: c;
+  }
+  .gridItemD {
+    grid-area: d;
+  }
 }
