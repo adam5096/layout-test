@@ -1,0 +1,96 @@
+/*====================================================
+mainvisual
+====================================================*/
+
+    /* 畫框調整器*/
+    /*  */
+  .mainvisual .img {
+    @media (max-width: 767.98px) {
+      overflow: hidden;
+      position: relative;
+      /* 這次是為了 mainvisual 的視覺設計而拉長寬度 */
+      width: 280%;
+      /* 正方形畫框 */
+      padding-top: 100%;
+      /* 長方形畫框: 高比寬大 */
+      /* padding-top: 150%; */
+      /* 長方形畫框: 寬比高大 */
+      /* padding-top: 50%; */
+      
+    }
+  }
+
+  /* 圖片本體配合動態畫框的一些設定 */
+  .mainvisual .img img {
+    @media (max-width: 767.98px) {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      object-fit: cover;
+      -o-object-fit: cover;
+    }
+  }
+
+
+/*====================================================
+productList
+====================================================*/
+.productList li a .img {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+.productList li a .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  object-fit: cover;
+  -o-object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  left: 0;
+}
+.productList li a:hover .img img {
+  transform: scale(1.2);
+}
+
+/*====================================================
+bgImg
+====================================================*/
+@media screen and (max-width: 767.98px) {
+  .bgImg {
+    background-image: url("../images/top/bg-01.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+  }
+}
+
+/*====================================================
+gridBox
+====================================================*/
+/* .gridBox {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.gridBox .div1 { grid-area: 1 / 1 / 9 / 3; }
+.gridBox .div2 { grid-area: 1 / 3 / 5 / 5; }
+.gridBox .div3 { grid-area: 5 / 3 / 9 / 5; }
+.gridBox .div4 { grid-area: 1 / 5 / 6 / 7; }
+.gridBox .div5 { grid-area: 6 / 5 / 11 / 7; }
+.gridBox .div6 { grid-area: 11 / 5 / 17 / 7; }
+.gridBox .div7 { grid-area: 9 / 1 / 17 / 5; }
+@media screen and (max-width: 767.98px) {
+    .gridBox {
+        display: initial;
+        grid-template-columns: initial;
+        grid-template-rows: initial;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+} */

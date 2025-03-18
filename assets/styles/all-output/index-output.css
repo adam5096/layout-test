@@ -1,3 +1,200 @@
+/*====================================================
+mainvisual
+====================================================*/
+
+/* 畫框調整器*/
+
+/*  */
+
+.mainvisual .img {
+  @media (max-width: 767.98px) {
+    overflow: hidden;
+
+    position: relative;
+
+    /* 這次是為了 mainvisual 的視覺設計而拉長寬度 */
+
+    width: 280%;
+
+    /* 正方形畫框 */
+
+    padding-top: 100%;
+
+    /* 長方形畫框: 高比寬大 */
+
+    /* padding-top: 150%; */
+
+    /* 長方形畫框: 寬比高大 */
+
+    /* padding-top: 50%; */
+  }
+}
+
+/* 圖片本體配合動態畫框的一些設定 */
+
+.mainvisual .img img {
+  @media (max-width: 767.98px) {
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    top: 0;
+
+    object-fit: cover;
+
+    -o-object-fit: cover;
+  }
+}
+
+/*====================================================
+productList
+====================================================*/
+
+.productList li a .img {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.productList li a .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  object-fit: cover;
+  -o-object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  left: 0;
+}
+
+.productList li a:hover .img img {
+  transform: scale(1.2);
+}
+
+/*====================================================
+bgImg
+====================================================*/
+
+@media screen and (max-width: 767.98px) {
+  .bgImg {
+    background-image: url("../images/top/bg-01.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+  }
+}
+
+/*====================================================
+gridBox
+====================================================*/
+
+/* .gridBox {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.gridBox .div1 { grid-area: 1 / 1 / 9 / 3; }
+.gridBox .div2 { grid-area: 1 / 3 / 5 / 5; }
+.gridBox .div3 { grid-area: 5 / 3 / 9 / 5; }
+.gridBox .div4 { grid-area: 1 / 5 / 6 / 7; }
+.gridBox .div5 { grid-area: 6 / 5 / 11 / 7; }
+.gridBox .div6 { grid-area: 11 / 5 / 17 / 7; }
+.gridBox .div7 { grid-area: 9 / 1 / 17 / 5; }
+@media screen and (max-width: 767.98px) {
+    .gridBox {
+        display: initial;
+        grid-template-columns: initial;
+        grid-template-rows: initial;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+} */
+
+/*====================================================
+header
+====================================================*/
+
+.headerNav li a{
+  position: relative;
+}
+
+.headerNav li a:after{
+  content: "";
+  position:absolute;
+  display: inline-block;
+  width: calc(100% + 4px);
+  height: 1px;
+  bottom:-6px;
+  left:-2px;
+  background-color: #fff;
+}
+
+.headerNav li a:hover:after{
+  background-color: #000;
+}
+
+@media screen and (max-width: 767.98px) {
+  .headerNav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    transition: all 500ms 0s ease;
+  }
+
+  .headerNav.active {
+    top: 0;
+  }
+
+  .hamburgerBtn{
+    width: 34px;
+    height: 34px;
+    position: relative;
+  }
+
+  .hamburgerBtn span{
+    display: inline-block;
+    position: absolute;
+    background: #000;
+    left: 2px;
+    width: 30px;
+    height: 2px;
+    transition: all 0.4s;
+  }
+
+  .hamburgerBtn span:nth-of-type(1) {
+    top: 6px;
+  }
+
+  .hamburgerBtn span:nth-of-type(2) {
+    top: 16px;
+  }
+
+  .hamburgerBtn span:nth-of-type(3) {
+    top: 26px;
+  }
+
+  .hamburgerBtn.active span:nth-of-type(1) {
+    transform: translateY(6px) rotate(-45deg);
+    top: 10px;
+  }
+
+  .hamburgerBtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .hamburgerBtn.active span:nth-of-type(3) {
+    transform: translateY(-6px) rotate(45deg);
+    top: 22px;
+  }
+}
+
 @font-face {
   font-family: "NotoSansTC-Regular";
 
@@ -124,7 +321,7 @@
   --tw-contain-style:  ;
 }
 
-/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -779,6 +976,40 @@ li {
   list-style: none;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 /* 版心 1 */
 
 .headphone-container {
@@ -797,6 +1028,30 @@ li {
   max-width: 1296px;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.start-0 {
+  inset-inline-start: 0px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .order-1 {
   order: 1;
 }
@@ -805,48 +1060,8 @@ li {
   order: 2;
 }
 
-.col-start-1 {
-  grid-column-start: 1;
-}
-
-.col-start-3 {
-  grid-column-start: 3;
-}
-
-.col-end-3 {
-  grid-column-end: 3;
-}
-
-.col-end-5 {
-  grid-column-end: 5;
-}
-
-.col-end-6 {
-  grid-column-end: 6;
-}
-
-.row-start-1 {
-  grid-row-start: 1;
-}
-
-.row-start-2 {
-  grid-row-start: 2;
-}
-
-.row-start-3 {
-  grid-row-start: 3;
-}
-
-.row-end-2 {
-  grid-row-end: 2;
-}
-
-.row-end-3 {
-  grid-row-end: 3;
-}
-
-.row-end-6 {
-  grid-row-end: 6;
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -888,12 +1103,8 @@ li {
   height: auto;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1\/4 {
-  width: 25%;
+.h-full {
+  height: 100%;
 }
 
 .w-\[100px\] {
@@ -910,10 +1121,6 @@ li {
 
 .max-w-\[1296px\] {
   max-width: 1296px;
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -975,16 +1182,14 @@ li {
   margin-bottom: calc(48px * var(--tw-space-y-reverse));
 }
 
-.space-y-\[600px\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(600px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(600px * var(--tw-space-y-reverse));
-}
-
 .space-y-\[8px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(8px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(8px * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .break-keep {
@@ -1030,6 +1235,10 @@ li {
      object-position: center;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-\[8px\] {
   padding: 8px;
 }
@@ -1064,6 +1273,10 @@ li {
   padding-bottom: 6px;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pb-\[48px\] {
   padding-bottom: 48px;
 }
@@ -1089,6 +1302,10 @@ li {
 .text-\[32px\]\/\[48px\] {
   font-size: 32px;
   line-height: 48px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .text-\[40px\]\/\[48px\] {
@@ -1160,20 +1377,54 @@ li {
   font-family: NotoSansTC-Regular, sans-serif;
 }
 
-.gridItemA {
-  grid-area: a;
+/* 網頁尺寸出現 grid */
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: repeat(16, minmax(0, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  /* 手機尺寸 grid 消失 */
+  @media (max-width: 1024px) {
+    display: initial;
+
+    grid-template-columns: initial;
+
+    grid-template-rows: initial;
+
+    grid-column-gap: 0;
+
+    grid-row-gap: 0;
+  }
 }
 
-.gridItemB {
-  grid-area: b;
+.gridItem-1 {
+  grid-area: 1/1/9/3;
 }
 
-.gridItemC {
-  grid-area: c;
+.gridItem-2 {
+  grid-area: 1/3/5/5;
 }
 
-.gridItemD {
-  grid-area: d;
+.gridItem-3 {
+  grid-area: 5/3/9/5;
+}
+
+.gridItem-4 {
+  grid-area: 1/5/6/7;
+}
+
+.gridItem-5 {
+  grid-area: 6/5/11/7;
+}
+
+.gridItem-6 {
+  grid-area: 11/5/17/7;
+}
+
+.gridItem-7 {
+  grid-area: 9/1/17/5;
 }
 
 /* 自訂全域基礎樣式 */
@@ -1205,8 +1456,8 @@ li {
     margin-top: 24px;
   }
 
-  .max-lg\:grid {
-    display: grid;
+  .max-lg\:block {
+    display: block;
   }
 
   .max-lg\:hidden {
@@ -1215,10 +1466,6 @@ li {
 
   .max-lg\:w-full {
     width: 100%;
-  }
-
-  .max-lg\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .max-lg\:flex-col {
@@ -1235,10 +1482,6 @@ li {
 
   .max-lg\:justify-center {
     justify-content: center;
-  }
-
-  .max-lg\:gap-y-\[24px\] {
-    row-gap: 24px;
   }
 
   .max-lg\:space-y-\[24px\] > :not([hidden]) ~ :not([hidden]) {
@@ -1265,5 +1508,19 @@ li {
   .max-md\:px-\[12px\] {
     padding-left: 12px;
     padding-right: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:inset-0 {
+    inset: 0px;
+  }
+
+  .md\:ms-auto {
+    margin-inline-start: auto;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 }
