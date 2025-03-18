@@ -53,7 +53,7 @@
 
         <main>
             <!-- hero -->
-            <section class="bg-black">
+            <!-- <section class="bg-black">
                 <div class="max-lg:px-[12px]  headphone-container-2 py-[60px]">
                     <img src="./assets/img/headphone-full-large.png" alt="headphone-full">
                     <div class="flex flex-col gap-y-[16px]">
@@ -65,25 +65,40 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
+            <!-- mainvisual -->
+            <div class="mainvisual relative z-0 text-white overflow-hidden">
+                <div class="img">
+                    <img src="assets/img/headphone-full-large.png" alt="商品圖" loading="lazy" class="w-full h-auto">
+                </div>
+                <div class="absolute start-0 bottom-10 md:inset-0 z-10 container m-auto p-6 flex justify-center items-center">
+                    <div class="md:w-1/2 md:ms-auto">
+                        <p class="text-[40px]">INEAR PRO MAX</p>
+                        <p>9/16 - 10/30 官網搶先販售</p>
+                        <p>
+                            新色上市，搭載最新降噪技術，提供給您最高音質享受，採用適應性演算法，快速處理音效，讓您享受更高傳真的效果。
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <!-- brand new -->
             <section class="bg-[#2B2B2B]">
                 <div class="max-lg:px-[12px]  headphone-container-2 py-[60px]">
                     <div class=" space-y-[48px]">
-                        <h2 class="text-center text-white text-[500] text-[32px]/[48px] break-keep">最新商品</h2>
+                        <h2 class="text-center text-white text-[500] text-4xl leading-10 break-keep">最新商品</h2>
                         <ul class="max-xl:flex-col max-xl:items-center flex gap-x-[24px]">
                             <li class="space-y-[24px]">
                                 <a href="#"><img src="./assets/img/INEAR-PRO-II.png" alt="INEAR PRO II"></a>
-                                <p class="p-[8px] text-white text-[16px]/[24px]">INEAR PRO II</p>
+                                <p class="p-[8px] text-white text-base leading-6">INEAR PRO II</p>
                             </li>
                             <li class="space-y-[24px]">
                                 <a href="#"><img src="./assets/img/INEAR-PRO-MAX.png" alt="INEAR PRO MAX"></a>
-                                <p class="p-[8px] text-white text-[16px]/[24px]">INEAR PRO II</p>
+                                <p class="p-[8px] text-white text-base leading-6">INEAR PRO II</p>
                             </li>
                             <li class="space-y-[24px]">
                                 <a href="#"><img src="./assets/img/INEAR-PRO-I.png" alt="INEAR PRO I"></a>
-                                <p class="p-[8px] text-white text-[16px]/[24px]">INEAR PRO II</p>
+                                <p class="p-[8px] text-white text-base leading-6">INEAR PRO II</p>
                             </li>
                         </ul>
                     </div>
@@ -94,39 +109,48 @@
             <!-- products -->
             <section class="bg-black">
                 <div class="max-lg:px-[12px]  headphone-container-2 py-[60px]">
-                    <div class="text-center space-y-[8px]">
-                        <h1 class="text-white text-[32px]/[38px]">多色選擇，專屬你的與眾不同</h1>
-                        <p class="text-white text-[16px]/[24px]">我的風格我主張，獨創品牌限定色，除了耀眼更要獨一無二</p>
+                    <div class="text-center pb-6 space-y-[8px]">
+                        <h1 class="text-white text-base leading-9">多色選擇，專屬你的與眾不同</h1>
+                        <p class="text-white text-base leading-6">我的風格我主張，獨創品牌限定色，除了耀眼更要獨一無二</p>
                     </div>
-                    <div class="max-lg:space-y-[24px] space-y-[600px] grid-cols-4 grid-row-5">
-                        <ul class="w-full max-lg:grid-cols-1 max-lg:gap-y-[24px]">
-                            <li><img src="./assets/img/pd-1.png" alt="pd-1"
-                                    class="outline w-1/2 h-auto  col-start-1 col-end-3 row-start-1 row-end-3">
-                            </li>
-                            <li><img src="./assets/img/pd-2.png" alt="pd-2"
-                                    class="outline w-1/4 h-auto  col-start-3 col-end-5 row-start-1 row-end-2">
-                            </li>
-                            <li><img src="./assets/img/pd-3.png" alt="pd-3"
-                                    class="outline w-1/4 h-auto  col-start-3 col-end-5 row-start-2 row-end-3">
-                            </li>
-                            <li><img src="./assets/img/pd-4.png" alt="pd-4"
-                                    class="outline w-1/4 h-auto  col-start-1 col-end-6 row-start-3 row-end-6">
-                            </li>
-                            <!-- <li><img src="./assets/img/pd-1.png" alt="pd-1" class="outline   gridItemA">
-                            </li>
-                            <li><img src="./assets/img/pd-2.png" alt="pd-2" class="outline    gridItemB">
-                            </li>
-                            <li><img src="./assets/img/pd-3.png" alt="pd-3" class="outline    gridItemC">
-                            </li>
-                            <li><img src="./assets/img/pd-4.png" alt="pd-4" class="outline    gridItemD">
-                            </li> -->
-                        </ul>
+                    <div class="max-lg:space-y-6 gridContainer">
+                        <figure class="gridItem-1">
+                            <img class="max-lg:hidden block w-full h-full object-cover" src="./assets/img/pd-1-lg.png" alt="白色 Beats">
+                            <img class="max-lg:block hidden w-full h-full object-cover" src="./assets/img/pd-1.png" alt="白色 Beats">
+                        </figure>
 
-                        <ul class="max-lg:grid max-lg:grid-cols-1 max-lg:gap-y-[24px]">
-                            <li><img src="./assets/img/pd-5.png" alt="pd-5"></li>
-                            <li><img src="./assets/img/pd-6.png" alt="pd-6"></li>
-                            <li><img src="./assets/img/pd-7.png" alt="pd-7"></li>
-                        </ul>
+                        <figure class="gridItem-2">
+                            <img class="max-lg:hidden block w-full h-full object-cover" src="./assets/img/pd-3-lg.png" alt="白色 Beats">
+                            <img class="max-lg:block hidden w-full h-full object-cover" src="./assets/img/pd-3.png" alt="白色 Beats">
+                        </figure>
+
+
+                        <figure class="gridItem-3">
+                            <img class="max-lg:hidden block w-full h-full object-cover" src="./assets/img/pd-2-lg.png" alt="白色 SONY">
+                            <img class="max-lg:block hidden w-full h-full object-cover" src="./assets/img/pd-2.png" alt="白色 SONY">
+                        </figure>
+
+
+                        <figure class="gridItem-4">
+                            <img class="max-lg:hidden block w-full h-full object-cover" src="./assets/img/pd-5-lg.png" alt="黑色 JBL">
+                            <img class="max-lg:block hidden w-full h-full object-cover" src="./assets/img/pd-5.png" alt="黑色 JBL">
+                        </figure>
+
+                        <figure class="gridItem-5">
+                            <img class="max-lg:hidden block w-full h-full object-cover" src="./assets/img/pd-6-lg.png" alt="黑色 JBL">
+                            <img class="max-lg:block hidden w-full h-full object-cover" src="./assets/img/pd-6.png" alt="黑色 JBL">
+                        </figure>
+
+                        <figure class="gridItem-6">
+                            <img class="max-lg:hidden block w-full h-full object-cover" src="./assets/img/pd-7-lg.png" alt="黑色 JBL">
+                            <img class="max-lg:block hidden w-full h-full object-cover" src="./assets/img/pd-7.png" alt="黑色 JBL">
+                        </figure>
+
+                        <figure class="gridItem-7">
+                            <img class="max-lg:hidden block w-full h-full object-cover" src="./assets/img/pd-4-lg.png" alt="紅色 無名">
+                            <img class="max-lg:block hidden w-full h-full object-cover" src="./assets/img/pd-4.png" alt="紅色 無名">
+                        </figure>
+
                     </div>
 
                 </div>
@@ -134,23 +158,24 @@
 
             <!-- contact -->
             <section class="bg-[#404040]">
-                <div class="px-[12px] headphone-container-2 py-[64px]">
-                    <div class="max-lg:flex-col flex gap-x-[24px]  items-center">
-                        <ul class="max-lg:mt-[24px] max-lg:justify-center max-lg:order-2 order-1 w-full flex justify-end gap-[24px]">
-                            <div class="pt-[48px] space-y-[24px]">
+                <div class="px-3 headphone-container-2 py-[64px]">
+                    <div class="max-lg:flex-col flex gap-x-6  items-center">
+                        <ul
+                            class="max-lg:mt-6 max-lg:justify-center max-lg:order-2 order-1 w-full flex justify-end gap-[24px]">
+                            <div class="pt-12 space-y-6">
                                 <li><img src="./assets/img/contact-1.png" alt="contact-1"></li>
                                 <li><img src="./assets/img/contact-2.png" alt="contact-2"></li>
                             </div>
-                            <div class="pb-[48px] space-y-[24px]">
+                            <div class="pb-12 space-y-6">
                                 <li><img src="./assets/img/contact-3.png" alt="contact-3"></li>
                                 <li><img src="./assets/img/contact-4.png" alt="contact-4"></li>
                             </div>
                         </ul>
 
                         <div class="max-lg:order-1 order-2 space-y-[48px]">
-                            <div class="space-y-[24px]">
-                                <h2 class="text-white text-[32px]/[38px]">訂製專屬於您的完美耳機</h2>
-                                <p class="text-white text-[16px]/[24px]">請於下方留下您的詳細資料與訂製需求，將有專人於 3
+                            <div class="space-y-6">
+                                <h2 class="text-white text-4xl leading-9">訂製專屬於您的完美耳機</h2>
+                                <p class="text-white text-base leading-6">請於下方留下您的詳細資料與訂製需求，將有專人於 3
                                     日內聯繫，此表單僅做為客服調查，不等同於完成訂製商品。</p>
                             </div>
 
@@ -188,15 +213,15 @@
             </section>
         </main>
 
-        <footer class="bg-black  h-[50vh]">
+        <footer class="bg-black">
             <!-- max-w-[1296px] -->
-            <div class="max-lg:px-[12px] headphone-container-2 py-[60px] space-y-[24px]">
+            <div class="max-lg:px-3 headphone-container-2 py-[60px] space-y-6">
                 <!-- logo -->
                 <div class="w-auto h-auto max-lg:justify-start flex justify-center items-center">
                     <img src="./assets/img/Logo.png" alt="logo" class="object-cover object-center">
                 </div>
 
-                <div class="outline max-lg:space-y-[24px]">
+                <div class="outline max-lg:space-y-6">
                     <!-- social icon -->
                     <ul class="max-lg:justify-start flex justify-center items-center gap-x-[24px] ">
                         <li><a href="#"><img src="./assets/img/Twitter.png" alt="twitter"></a></li>
